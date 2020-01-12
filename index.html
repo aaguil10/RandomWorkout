@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+	<h2 class="header">Random Workout</h2>
+	<h3 class="title">Chest</h3>
+
+	<div class="muscle-card" id="upper">
+		<h4 class="muscle-title">Upper</h4>
+		<img class="muscle-diagram"
+			alt="upper chest diagram" 
+			src="images/diagram_upper_chest.png">
+		<img id="upperChestImg" 
+			class="muscle-gif"
+			alt="upper chest" 
+			src="images/decline_chest_press_dumbell.gif"  
+			onclick="upperChestClick()">
+	</div>
+
+
+	<div class="muscle-card" id="middle">
+		<h4 class="muscle-title">Middle</h4>
+		<img class="muscle-diagram"
+			alt="middle chest diagram" 
+			src="images/diagram_middle_chest.png">
+		<img id="middleChestImg" 
+		class="muscle-gif"
+		alt="upper chest" 
+		src="images/decline_chest_press_dumbell.gif"  
+		onclick="middleChestClick()">
+	</div>
+
+
+	<div class="muscle-card" id="lower">
+		<h4 class="muscle-title">Lower</h4>
+		<img class="muscle-diagram"
+			alt="lower chest diagram" 
+			src="images/diagram_lower_chest.png">
+		<img src="images/decline_chest_press_dumbell.gif" alt="chestpress" class="muscle-gif">
+	</div>
+
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/7.6.1/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+	<script src="js/chest.js"></script>
+	<script src="js/script.js"></script>
+
+
+</body>
+</html>

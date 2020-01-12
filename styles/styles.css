@@ -1,0 +1,82 @@
+
+.header {
+	grid-area: header;
+	text-align: center;
+	margin: 0;
+}
+
+.title {
+	grid-area: title;
+	margin: 0;
+}
+
+.muscle-card {
+	grid-area: muscle-card;
+}
+
+.muscle-title {
+	grid-area: muscle-title;
+	align-self: center;
+	margin: 0;
+}
+
+.muscle-diagram {
+	grid-area: muscle-diagram;
+	width:100px;
+	align-self: center;
+	margin: 0;
+}
+
+.muscle-gif {
+	grid-area: muscle-gif;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.muscle-card {
+	display: grid;
+	grid-template-columns: 100px auto;
+  	grid-template-rows: 125px auto;
+  	grid-template-areas: 
+    "muscle-diagram muscle-title" 
+    "muscle-gif muscle-gif";
+}
+
+#upper.muscle-card {
+	grid-area: muscle-upper;
+}
+
+#middle.muscle-card {
+	grid-area: muscle-middle;
+}
+
+#lower.muscle-card {
+	grid-area: muscle-lower;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	display: grid;
+	grid-template-columns: 1% 98% 1%;
+  	grid-template-rows: auto auto auto auto auto;
+  	grid-template-areas: 
+		". header ." 
+		". title ."
+		". muscle-upper ."
+		". muscle-middle ."
+		". muscle-lower .";
+}
+
+h2 {
+	font-size: 60px;
+}
+
+h3 {
+	font-size: 48px;
+}
+
+h4 {
+	font-size: 48px;
+}
