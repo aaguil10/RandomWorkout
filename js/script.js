@@ -1,39 +1,3 @@
-
-
-
-
-var upperChestIndexList = randomList(upper.length);
-var upperChestIndex = 0;
-document.getElementById("upperChestImg").src = "images/" + 
-	upper[upperChestIndexList[upperChestIndex]];
-
-function upperChestClick() {
-	upperChestIndex++;
-	if(upperChestIndex == upper.length){
-		upperChestIndex = 0;
-	}
-	document.getElementById("upperChestImg").src = "images/" + 
-		upper[upperChestIndexList[upperChestIndex]];
-}
-
-
-var middleChestIndexList = randomList(middle.length);
-var middleChestIndex = 0;
-document.getElementById("middleChestImg").src = "images/" +
-	middle[middleChestIndexList[middleChestIndex]];
-
-function middleChestClick() {
-	middleChestIndex++;
-	if(middleChestIndex == middle.length){
-		middleChestIndex = 0;
-	}
-	document.getElementById("middleChestImg").src = "images/" + 
-		middle[middleChestIndexList[middleChestIndex]];
-}
-
-
-
-
 function randomList(length) {
 	var top = length-1;
 	var tracker = new Array(length);
@@ -54,4 +18,26 @@ function randomList(length) {
 		result[i] = current;	
 	}
   return result;
+}
+
+function setUpCard(gifList, elementId){
+	var indexList = randomList(gifList.length);
+	document.getElementById(elementId).src = "images/" +
+		gifList[indexList[0]];
+
+	return {
+		'index': 0, 
+		'indexList': indexList,
+		'elementId': elementId,
+		'gifList': gifList
+	};
+}
+
+function gifClick(state) {
+	state.index++;
+	if(state.index == state.gifList.length){
+		state.index = 0;
+	}
+	document.getElementById(state.elementId).src = "images/" + 
+		state.gifList[state.indexList[state.index]];
 }

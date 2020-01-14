@@ -16,11 +16,11 @@
 		<img class="muscle-diagram"
 			alt="upper chest diagram" 
 			src="images/diagram_upper_chest.png">
-		<img id="upperChestImg" 
+		<img id="upper_chest_gif" 
 			class="muscle-gif"
 			alt="upper chest" 
 			src="images/decline_chest_press_dumbell.gif"  
-			onclick="upperChestClick()">
+			onclick="gifClick(upperChestState)">
 	</div>
 
 
@@ -29,11 +29,11 @@
 		<img class="muscle-diagram"
 			alt="middle chest diagram" 
 			src="images/diagram_middle_chest.png">
-		<img id="middleChestImg" 
+		<img id="middle_chest_gif" 
 		class="muscle-gif"
 		alt="upper chest" 
 		src="images/decline_chest_press_dumbell.gif"  
-		onclick="middleChestClick()">
+		onclick="gifClick(middleChestState)">
 	</div>
 
 
@@ -42,7 +42,11 @@
 		<img class="muscle-diagram"
 			alt="lower chest diagram" 
 			src="images/diagram_lower_chest.png">
-		<img src="images/decline_chest_press_dumbell.gif" alt="chestpress" class="muscle-gif">
+		<img id="lower_chest_gif" 
+		class="muscle-gif"
+		alt="lower chest" 
+		src="images/decline_chest_press_dumbell.gif"  
+		onclick="gifClick(lowerChestState)">
 	</div>
 
 
@@ -55,8 +59,8 @@
 
 	<!-- Initialize Firebase -->
 	<script src="/__/firebase/init.js"></script>
-	<script src="js/chest.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/chest.js"></script>
 
 
 </body>

@@ -1,0 +1,51 @@
+#upper_trapezius.muscle-card {
+	grid-area: upper_trapezius;
+}
+
+#middle_trapezius.muscle-card {
+	grid-area: middle_trapezius;
+}
+
+#lower_trapezius.muscle-card {
+	grid-area: lower_trapezius;
+}
+
+#rhomboid.muscle-card {
+	grid-area: rhomboid;
+}
+
+#back_extensors.muscle-card {
+	grid-area: back_extensors;
+}
+
+#latissimus_dorsi.muscle-card {
+	grid-area: latissimus_dorsi;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	display: grid;
+	grid-template-columns: 1% 98% 1%;
+  	grid-template-rows: auto auto auto auto auto auto auto auto;
+  	grid-template-areas: 
+		". header ." 
+		". title ."
+		". upper_trapezius ."
+		". middle_trapezius ."
+		". lower_trapezius ."
+		". rhomboid ."
+		". back_extensors ."
+		". latissimus_dorsi .";
+}
+
+h2 {
+	font-size: 60px;
+}
+
+h3 {
+	font-size: 48px;
+}
+
+h4 {
+	font-size: 48px;
+}
